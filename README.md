@@ -40,7 +40,6 @@ last)
 
 /Users/marca/dev/git-repos/python_dotted_name_resolver/dotted_name_resolver/__init__.pyc
 in resolve(self, dotted)
-    327         """
     328         if not isinstance(dotted, string_types):
 --> 329             raise ValueError('%r is not a string' % (dotted,))
     330         package = self.package
