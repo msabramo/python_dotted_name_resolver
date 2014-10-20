@@ -1,6 +1,9 @@
 python_dotted_name_resolver
 ===========================
 
+[![Build
+Status](https://travis-ci.org/msabramo/python_dotted_name_resolver.svg?branch=master)](https://travis-ci.org/msabramo/python_dotted_name_resolver)
+
 [DottedNameResolver](http://docs.pylonsproject.org/projects/pyramid/en/latest/api/path.html#pyramid.path.DottedNameResolver)
 and other stuff lifted from
 [pyramid.path](http://docs.pylonsproject.org/projects/pyramid/en/latest/api/path.html)
