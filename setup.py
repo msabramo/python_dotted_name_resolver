@@ -45,7 +45,7 @@ setup(
     long_description=README + '\n\n' +  CHANGES,
     author="Marc Abramowitz",
     author_email="marc@marc-abramowitz.com",
-    url="",
+    url="https://github.com/msabramo/python_dotted_name_resolver",
     license="BSD-derived (http://www.repoze.org/LICENSE.txt)",
     packages=find_packages(),
     include_package_data=True,
