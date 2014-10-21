@@ -1,7 +1,7 @@
 python\_dotted\_name\_resolver
 ==============================
 
-|Build Status|
+|Build Status|  |PyPI Version|
 
 `DottedNameResolver <http://docs.pylonsproject.org/projects/pyramid/en/latest/api/path.html#pyramid.path.DottedNameResolver>`__
 and other stuff lifted from
@@ -81,3 +81,7 @@ Supported python versions
 
 .. |Build Status| image:: https://travis-ci.org/msabramo/python_dotted_name_resolver.svg?branch=master
    :target: https://travis-ci.org/msabramo/python_dotted_name_resolver
+
+.. |PyPI Version| image:: https://pypip.in/version/dotted_name_resolver/badge.svg
+    :target: https://pypi.python.org/pypi/dotted_name_resolver/
+    :alt: Latest Version
