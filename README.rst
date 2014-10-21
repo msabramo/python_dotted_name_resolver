@@ -61,10 +61,9 @@ A few quick examples of usage
 Documentation
 -------------
 
-For detailed documentation, see `the documentation for
-``pyramid.path`` <http://docs.pylonsproject.org/projects/pyramid/en/latest/api/path.html>`__
-and replace anything that says ``pyramid.path`` with
-``dotted_name_resolver``.
+For detailed documentation, see `the documentation for pyramid.path
+<http://docs.pylonsproject.org/projects/pyramid/en/latest/api/path.html>`_ and
+replace anything that says ``pyramid.path`` with ``dotted_name_resolver``.
 
 Supported python versions
 -------------------------
