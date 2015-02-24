@@ -16,15 +16,17 @@ import os
 import pkg_resources
 import sys
 
+Interface = object
 try:
     from zope.interface import implementer
+    from zope.interface import Interface
 except ImportError:
     def implementer(iface):
         def wrapper(wrapped):
             return wrapped
         return wrapper
 
-class IAssetDescriptor(object):
+class IAssetDescriptor(Interface):
     pass
 
 # True if we are running on Python 3.
