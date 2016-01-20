@@ -3,15 +3,15 @@ env:
   - TOXENV=py26-zope.interface0
   - TOXENV=py27-zope.interface0
   - TOXENV=pypy-zope.interface0
-  - TOXENV=py32-zope.interface0
   - TOXENV=py33-zope.interface0
   - TOXENV=py34-zope.interface0
+  - TOXENV=py35-zope.interface0
   - TOXENV=py26-zope.interface1
   - TOXENV=py27-zope.interface1
   - TOXENV=pypy-zope.interface1
-  - TOXENV=py32-zope.interface1
   - TOXENV=py33-zope.interface1
   - TOXENV=py34-zope.interface1
+  - TOXENV=py35-zope.interface1
 install:
   - travis_retry pip install tox
 script:
