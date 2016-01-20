@@ -40,7 +40,7 @@ testing_extras = [
 
 setup(
     name='dotted_name_resolver',
-    version='0.0',
+    version='0.1',
     description='DottedNameResolver and other stuff lifted from pyramid.path',
     long_description=README + '\n\n' +  CHANGES,
     author="Marc Abramowitz",

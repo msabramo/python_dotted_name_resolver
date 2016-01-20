@@ -1,0 +1,11 @@
+0.1
+===
+
+- Fix zope.interface installed issue
+  (https://github.com/msabramo/python_dotted_name_resolver/pull/1). Thanks,
+  Victor Lin!
+
+0.0
+===
+
+- Initial release
