@@ -11,7 +11,7 @@ Stolen from Pyramid:
 * https://github.com/Pylons/pyramid/blob/master/pyramid/path.py#L211
 """
 
-import imp
+from importlib.machinery import SOURCE_SUFFIXES
 import os
 import pkg_resources
 import sys
@@ -29,18 +29,7 @@ except ImportError:
 class IAssetDescriptor(Interface):
     pass
 
-# True if we are running on Python 3.
-PY3 = sys.version_info[0] == 3
-
-if PY3: # pragma: no cover
-    string_types = str,
-else:
-    string_types = basestring,
-
-
-ignore_types = [ imp.C_EXTENSION, imp.C_BUILTIN ]
-init_names = [ '__init__%s' % x[0] for x in imp.get_suffixes() if
-               x[0] and x[2] not in ignore_types ]
+init_names = ['__init__%s' % x for x in SOURCE_SUFFIXES]
 
 def caller_path(path, level=2):
     if not os.path.isabs(path):
@@ -119,7 +108,7 @@ class Resolver(object):
         if package in (None, CALLER_PACKAGE):
             self.package = package
         else:
-            if isinstance(package, string_types):
+            if isinstance(package, str):
                 try:
                     __import__(package)
                 except ImportError:
@@ -327,7 +316,7 @@ class DottedNameResolver(Resolver):
            v = r.resolve('xml') # v is the xml module
 
         """
-        if not isinstance(dotted, string_types):
+        if not isinstance(dotted, str):
             raise ValueError('%r is not a string' % (dotted,))
         package = self.package
         if package is CALLER_PACKAGE:
@@ -348,7 +337,7 @@ class DottedNameResolver(Resolver):
            v = r.maybe_resolve(xml)
            # v is the xml module; no exception raised
         """
-        if isinstance(dotted, string_types):
+        if isinstance(dotted, str):
             package = self.package
             if package is CALLER_PACKAGE:
                 package = caller_package()

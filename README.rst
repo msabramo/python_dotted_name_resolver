@@ -70,14 +70,16 @@ Supported python versions
 
 ::
 
-    $ /Library/Frameworks/Python.framework/Versions/3.3/bin/tox
-    ...
-      py26: commands succeeded
-      py27: commands succeeded
-      py33: commands succeeded
-      py34: commands succeeded
-      pypy: commands succeeded
-      congratulations :)
+    $ tox
+      py39-zope.interface0: OK (3.89=setup[3.67]+cmd[0.22] seconds)
+      py39-zope.interface1: OK (1.46=setup[1.23]+cmd[0.23] seconds)
+      py310-zope.interface0: OK (0.87=setup[0.64]+cmd[0.22] seconds)
+      py310-zope.interface1: OK (0.84=setup[0.61]+cmd[0.23] seconds)
+      py311-zope.interface0: OK (0.88=setup[0.67]+cmd[0.21] seconds)
+      py311-zope.interface1: OK (0.86=setup[0.63]+cmd[0.22] seconds)
+      py312-zope.interface0: OK (2.28=setup[2.04]+cmd[0.24] seconds)
+      py312-zope.interface1: OK (2.48=setup[2.22]+cmd[0.26] seconds)
+      congratulations :) (13.66 seconds)
 
 .. |Build Status| image:: https://travis-ci.org/msabramo/python_dotted_name_resolver.svg?branch=master
    :target: https://travis-ci.org/msabramo/python_dotted_name_resolver

@@ -5,14 +5,8 @@ from setuptools import setup, find_packages
 
 py_version = sys.version_info[:2]
 
-PY3 = py_version[0] == 3
-
-if PY3:
-    if py_version < (3, 2):
-        raise RuntimeError('On Python 3, we require Python 3.2 or better')
-else:
-    if py_version < (2, 6):
-        raise RuntimeError('On Python 2, we require Python 2.6 or better')
+if py_version < (3, 9):
+    raise RuntimeError('On Python 3, we require Python 3.9 or better')
 
 here = os.path.abspath(os.path.dirname(__file__))
 try:

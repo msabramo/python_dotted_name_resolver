@@ -1,6 +1,5 @@
 import unittest
 import os
-from dotted_name_resolver import PY3
 
 from pytest import importorskip
 
@@ -401,10 +400,7 @@ class TestDottedNameResolver(unittest.TestCase):
 
     def test_zope_dottedname_style_resolve_builtin(self):
         typ = self._makeOne()
-        if PY3: # pragma: no cover
-            result = typ._zope_dottedname_style('builtins.str', None)
-        else:
-            result = typ._zope_dottedname_style('__builtin__.str', None)
+        result = typ._zope_dottedname_style('builtins.str', None)
         self.assertEqual(result, str)
 
     def test_zope_dottedname_style_resolve_absolute(self):
