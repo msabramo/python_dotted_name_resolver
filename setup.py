@@ -34,7 +34,7 @@ testing_extras = [
 
 setup(
     name='dotted_name_resolver',
-    version='0.2.1',
+    version='0.2.2',
     description='DottedNameResolver and other stuff lifted from pyramid.path',
     long_description=README,
     long_description_content_type='text/markdown',

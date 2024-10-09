@@ -8,7 +8,7 @@ wonderful [Pyramid] web framework.
 
 ## A few quick examples of usage
 
-``` python
+```python
 In [1]: from dotted_name_resolver import DottedNameResolver
 
 In [2]: r = DottedNameResolver()
