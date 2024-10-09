@@ -34,9 +34,9 @@ testing_extras = [
 
 setup(
     name='dotted_name_resolver',
-    version='0.2',
+    version='0.2.1',
     description='DottedNameResolver and other stuff lifted from pyramid.path',
-    long_description=README + '\n\n' +  CHANGES,
+    long_description=README,
     long_description_content_type='text/markdown',
     author="Marc Abramowitz",
     author_email="marc@marc-abramowitz.com",
