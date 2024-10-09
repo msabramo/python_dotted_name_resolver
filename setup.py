@@ -37,6 +37,7 @@ setup(
     version='0.1',
     description='DottedNameResolver and other stuff lifted from pyramid.path',
     long_description=README + '\n\n' +  CHANGES,
+    long_description_content_type='text/markdown',
     author="Marc Abramowitz",
     author_email="marc@marc-abramowitz.com",
     url="https://github.com/msabramo/python_dotted_name_resolver",
