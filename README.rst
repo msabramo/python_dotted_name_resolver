@@ -81,8 +81,8 @@ Supported python versions
       py312-zope.interface1: OK (2.48=setup[2.22]+cmd[0.26] seconds)
       congratulations :) (13.66 seconds)
 
-.. |Build Status| image:: https://travis-ci.org/msabramo/python_dotted_name_resolver.svg?branch=master
-   :target: https://travis-ci.org/msabramo/python_dotted_name_resolver
+.. |Build Status| image:: https://github.com/msabramo/python_dotted_name_resolver/actions/workflows/python-package.yml/badge.svg
+   :target: https://github.com/msabramo/python_dotted_name_resolver/actions/workflows/python-package.yml
 
 .. |PyPI Version| image:: https://img.shields.io/pypi/v/dotted_name_resolver.svg
     :target: https://pypi.python.org/pypi/dotted_name_resolver/
