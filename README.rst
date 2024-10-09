@@ -82,6 +82,6 @@ Supported python versions
 .. |Build Status| image:: https://travis-ci.org/msabramo/python_dotted_name_resolver.svg?branch=master
    :target: https://travis-ci.org/msabramo/python_dotted_name_resolver
 
-.. |PyPI Version| image:: https://pypip.in/version/dotted_name_resolver/badge.svg
+.. |PyPI Version| image:: https://img.shields.io/pypi/v/dotted_name_resolver.svg
     :target: https://pypi.python.org/pypi/dotted_name_resolver/
     :alt: Latest Version
